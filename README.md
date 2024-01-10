@@ -4,7 +4,7 @@
 1. EC2 instance (z1d.2xlarge recommended)
 3. AWS FPGA Developer AMI [(install)](https://github.com/aws/aws-fpga/blob/master/Vitis/README.md)
 4. S3 Bucket
-5. Pretrained model parameters & tokenizer can be found [here](https://drive.google.com/drive/folders/1ivGgCHgk8W_PgZdNSNwyBwqFwCQr_FvS?usp=sharing)
+5. Pretrained model parameters & tokenizer can be found [here](https://drive.google.com/drive/folders/13awUjl2nhhBiRMesXR6O9zhnMoYbeACW?usp=sharing)
 
 ## Build Instructions 
 1. Follow the setup for AWS FPGA Developer AMI
