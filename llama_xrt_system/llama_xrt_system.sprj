@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:systemproject="http://www.xilinx.com/systemproject" name="llama_xrt_system" platform="/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm" platformUID="xilinx:aws-vu9p-f1:shell-v04261818:201920.3(custom)" sysConfig="config0_0" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Emulation-SW" id="com.xilinx.sdx.system.managedbuilder.swemu.configuration.1547946202">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="llama_xrt_system_hw_link" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-SW"/>
+      <applications name="llama_xrt_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-SW"/>
+      <applications name="llama_xrt" domainName="x86" domainPrettyName="x86" appBuildConfig="Emulation-SW"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="llama_xrt_system_hw_link" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-SW"/>
+      <applications name="llama_xrt_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-SW"/>
+      <applications name="llama_xrt" domainName="x86" domainPrettyName="x86" appBuildConfig="Emulation-SW"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.sdx.system.managedbuilder.hwemu.configuration.538547883">
+    <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw_emu">
+      <applications name="llama_xrt_system_hw_link" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-HW"/>
+      <applications name="llama_xrt_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-HW"/>
+      <applications name="llama_xrt" domainName="x86" domainPrettyName="x86" appBuildConfig="Emulation-HW"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions" target="hw_emu">
+      <applications name="llama_xrt_system_hw_link" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-HW"/>
+      <applications name="llama_xrt_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Emulation-HW"/>
+      <applications name="llama_xrt" domainName="x86" domainPrettyName="x86" appBuildConfig="Emulation-HW"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.sdx.system.managedbuilder.hw.configuration.152960502">
+    <configBuildOptions xsi:type="systemproject:SystemOptions" target="hw">
+      <applications name="llama_xrt_system_hw_link" domainName="" domainPrettyName="pl" appBuildConfig="Hardware"/>
+      <applications name="llama_xrt_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Hardware"/>
+      <applications name="llama_xrt" domainName="x86" domainPrettyName="x86" appBuildConfig="Hardware"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions" target="hw">
+      <applications name="llama_xrt_system_hw_link" domainName="" domainPrettyName="pl" appBuildConfig="Hardware"/>
+      <applications name="llama_xrt_kernels" domainName="" domainPrettyName="pl" appBuildConfig="Hardware"/>
+      <applications name="llama_xrt" domainName="x86" domainPrettyName="x86" appBuildConfig="Hardware"/>
+    </lastBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

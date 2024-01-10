@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ASCII"?>
+<hwlink:HwLinkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:hwlink="http://www.xilinx.com/acceleration/hwlink" name="llama_xrt_system_hw_link" platform="/home/centos/src/project_data/aws-fpga/Vitis/aws_platform/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm" systemProject="llama_xrt_system" cpu="pl">
+  <configuration name="Emulation-SW" id="com.xilinx.ide.accel.config.hwlink.sw_emu.1330538819">
+    <configBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1">
+        <kernels name="forward" projectName="llama_xrt_kernels">
+          <computeUnits name="forward_1" slr="">
+            <args name="transformer" master="true" memory=""/>
+            <args name="token"/>
+            <args name="pos"/>
+            <args name="key_cache" master="true" memory=""/>
+            <args name="value_cache" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions">
+      <binaryContainers name="binary_container_1">
+        <kernels name="forward" projectName="llama_xrt_kernels">
+          <computeUnits name="forward_1" slr="">
+            <args name="transformer" master="true" memory=""/>
+            <args name="token"/>
+            <args name="pos"/>
+            <args name="key_cache" master="true" memory=""/>
+            <args name="value_cache" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.ide.accel.config.hwlink.hw_emu.856582495">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="forward" projectName="llama_xrt_kernels">
+          <computeUnits name="forward_1" slr="">
+            <args name="transformer" master="true" memory=""/>
+            <args name="token"/>
+            <args name="pos"/>
+            <args name="key_cache" master="true" memory=""/>
+            <args name="value_cache" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="forward" projectName="llama_xrt_kernels">
+          <computeUnits name="forward_1" slr="">
+            <args name="transformer" master="true" memory=""/>
+            <args name="token"/>
+            <args name="pos"/>
+            <args name="out" master="true" memory=""/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Hardware" id="com.xilinx.ide.accel.config.hwlink.hw.348389109">
+    <configBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="forward" projectName="llama_xrt_kernels">
+          <computeUnits name="forward_1" slr="">
+            <args name="transformer" master="true" memory=""/>
+            <args name="token"/>
+            <args name="pos"/>
+            <args name="key_cache" master="true" memory=""/>
+            <args name="value_cache" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="hwlink:LinkOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="forward" projectName="llama_xrt_kernels">
+          <computeUnits name="forward_1" slr="">
+            <args name="transformer" master="true" memory=""/>
+            <args name="token"/>
+            <args name="pos"/>
+            <args name="key_cache" master="true" memory=""/>
+            <args name="value_cache" master="true" memory=""/>
+            <args name="out" master="true" memory=""/>
+          </computeUnits>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</hwlink:HwLinkProject>
