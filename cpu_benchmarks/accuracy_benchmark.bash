@@ -10,7 +10,7 @@ do
     echo $COUNTER
     echo "${cnt:Q}"
     out=$(./runq_ppl modelq.bin -i "${cnt:Q}")
-    printf "$out\n" >> "llama_quantized_2.txt"
+    printf "$out\n" >> "llama_quantized.txt"
 
     let COUNTER++
 done    

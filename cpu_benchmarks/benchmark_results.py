@@ -13,10 +13,12 @@ def run_model(tokens):
 
 
 def get_latency():
-    subprocess.call(
-        f'./runq_latency_256 ./modelq.bin -t 1 -n 256 -i ""', shell=True)
-    subprocess.call(
-        f'./runq_latency_1024 ./modelq.bin -t 1 -n 1024 -i ""', shell=True)
+    for i in range(100):
+        subprocess.call(
+            f'./runq_latency_256 ./modelq.bin -t 1 -n 256 -i ""', shell=True)
+    for i in range(100):
+        subprocess.call(
+            f'./runq_latency_1024 ./modelq.bin -t 1 -n 1024 -i ""', shell=True)
 
 
 run_model(256)
@@ -25,6 +27,6 @@ run_model(1024)
 get_latency()
 
 
-subprocess.call(f'accuracy_benchmark_non_quantized.bash', shell=True)
+subprocess.call(f'bash accuracy_benchmark_non_quantized.sh', shell=True)
 
-subprocess.call(f'accuracy_benchmark_non_quantized.bash', shell=True)
+subprocess.call(f'bash accuracy_benchmark.bash', shell=True)

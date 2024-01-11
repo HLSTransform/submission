@@ -9,8 +9,8 @@ do
 
     echo $COUNTER
     echo "${cnt:Q}"
-    out=$(./run_ppl stories42M.bin -i "${cnt:Q}")
-    printf "$out\n" >> "llama_nonquantized_2.txt"
+    out=$(./run_ppl stories110M.bin -i "${cnt:Q}")
+    printf "$out\n" >> "llama_nonquantized.txt"
 
     let COUNTER++
 done    

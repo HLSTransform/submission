@@ -95,6 +95,9 @@ clean:
 	rm -f runq_latency_256
 	rm -f runq_latency_512
 	rm -f runq_power_consumption
+	rm -f run_ppl
+	rm -f runq_ppl
 	rm -f 256_cpu.txt
 	rm -f 1024_cpu.txt
-
+	rm -f llama_quantized.txt
+	rm -f llama_nonquantized.txt
